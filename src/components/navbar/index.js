@@ -30,12 +30,12 @@ Navbar.Link = function NavbarLink({ to, children, ...restProps }) {
 
 Navbar.Promote = function NavbarPromote({ to, children, ...restProps }) {
   return (
-    <ReactRouterLink to={to}>
-      <Promote {...restProps}>
+    <Promote {...restProps}>
+      <ReactRouterLink to={to}>
         <button>
           Promote Business <i class="fas fa-caret-right"></i>
         </button>
-      </Promote>
-    </ReactRouterLink>
+      </ReactRouterLink>
+    </Promote>
   );
 };

@@ -39,6 +39,7 @@ export const Links = styled.div`
 
 export const Link = styled.a`
   font-size: 18px;
+  font-weight: 600;
   color: #00cc92;
   margin-bottom: 2.5px;
 
@@ -56,12 +57,13 @@ export const Promote = styled.div`
   padding: 0 2rem;
 
   button {
-    width: 211px;
+    width: 205px;
     height: 38px;
     background: #00cc92;
     border-radius: 50px;
     color: #ffffff;
     font-size: 1rem;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;

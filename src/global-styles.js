@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         line-height: 1;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #000000;
         background-color: #FFFFFF;
         font-smooth: always;

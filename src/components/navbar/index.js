@@ -10,7 +10,7 @@ export default function Navbar({ children, ...restProps }) {
 Navbar.Logo = function NavbarLogo({ to, children, ...restProps }) {
   return (
     <Logo {...restProps}>
-      <img src="/images/TemporaryLogo.png" alt="" />
+      <img src="/images/TemporaryLogo.png" alt="Logo" />
       <h3>SUB</h3>
     </Logo>
   );

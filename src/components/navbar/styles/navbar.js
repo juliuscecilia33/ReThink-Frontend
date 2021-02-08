@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const Container = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 9vh;
   display: flex;
   padding: 0 1rem;
 `;
@@ -40,11 +40,10 @@ export const Links = styled.div`
 export const Link = styled.a`
   font-size: 18px;
   color: #00cc92;
-  margin-bottom: 3px;
-  transition: 0.5s ease all;
+  margin-bottom: 2.5px;
 
   &:hover {
-    border-bottom: 1px solid #00cc92;
+    border-bottom: 2px solid #00cc92;
   }
 `;
 
@@ -58,7 +57,7 @@ export const Promote = styled.div`
 
   button {
     width: 211px;
-    height: 45px;
+    height: 38px;
     background: #00cc92;
     border-radius: 50px;
     color: #ffffff;
@@ -69,7 +68,7 @@ export const Promote = styled.div`
     cursor: pointer;
 
     i {
-      font-size: 0.5rem;
+      font-size: 1rem;
       color: #ffffff;
       margin-left: 1rem;
     }

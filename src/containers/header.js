@@ -34,6 +34,11 @@ export function HeaderContainer() {
             Sign Up
           </Burger.Link>
           <Burger.Squiggle />
+          <Burger.Socials>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-envelope"></i>
+          </Burger.Socials>
         </Burger.Menu>
       </Header>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
-import { Heading, Icon, Menu, Link, Squiggle } from "./styles/burger";
+import { Heading, Icon, Menu, Link, Squiggle, Socials } from "./styles/burger";
 
 export default function Burger({ open, setOpen, children, ...restProps }) {
   return (
@@ -34,7 +34,10 @@ Burger.Link = function BurgerLink({
 }) {
   return (
     <ReactRouterLink onClick={() => setOpen(!open)} to={to}>
-      <Link {...restProps}>{children}</Link>
+      <Link {...restProps}>
+        <img src="/images/Arrow.png" alt="Arrow" />
+        <h2>{children}</h2>
+      </Link>
     </ReactRouterLink>
   );
 };
@@ -47,6 +50,6 @@ Burger.Squiggle = function BurgerSquiggle({ children, ...restProps }) {
   );
 };
 
-// Burger.Socials = function BurgerSocials({ children, ...restProps }) {
-//   return <Socials {...restProps}>{children}</Socials>;
-// };
+Burger.Socials = function BurgerSocials({ children, ...restProps }) {
+  return <Socials {...restProps}>{children}</Socials>;
+};

@@ -57,7 +57,7 @@ export const Menu = styled.nav`
   width: 30%;
   height: 100vh;
   align-items: center;
-  padding: 3.5rem;
+  padding: 1.5rem 3rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -80,10 +80,22 @@ export const Link = styled.a`
   text-decoration: none;
   transition: all 0.3s ease;
   z-index: 10;
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+  }
 
   &:hover {
-    color: #ef8354;
+    color: #00cc92;
   }
 `;
 
@@ -96,4 +108,18 @@ export const Heading = styled.h2`
 export const Squiggle = styled.img`
   width: 22px;
   height: auto;
+`;
+
+export const Socials = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+
+  i {
+    font-size: 32px;
+    color: #000000;
+    margin-right: 1.5rem;
+  }
 `;

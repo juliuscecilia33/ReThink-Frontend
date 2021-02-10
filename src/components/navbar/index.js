@@ -1,3 +1,5 @@
+// This is the navbar for the desktop version
+
 import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
 

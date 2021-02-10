@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar } from "../components";
-import * as ROUTES from "../constants/routes";
 
 export function NavbarContainer() {
   return (

@@ -4,21 +4,18 @@ export const Icon = styled.button`
   position: absolute;
   top: 30%;
   right: 2rem;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
   height: 2rem;
   background: transparent;
+  color: #1f2421;
   border: none;
   cursor: pointer;
   padding: 0;
   z-index: 100;
   overflow: hidden;
-
-  @media (max-width: 750px) {
-    display: flex;
-  }
 
   &:focus {
     outline: none;
@@ -39,6 +36,7 @@ export const Icon = styled.button`
     }
 
     &:nth-child(2) {
+      width: 1.5rem;
       opacity: ${({ open }) => (open ? "0" : "1")};
       transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
     }
@@ -50,29 +48,24 @@ export const Icon = styled.button`
 `;
 
 export const Menu = styled.nav`
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   background: white;
+  width: 100%;
   height: 100vh;
   text-align: center;
   padding: 3.5rem;
   position: absolute;
   top: 0;
   left: 0;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
   z-index: 10;
-
-  @media (max-width: 750px) {
-    display: flex;
-    width: 100%;
-  }
 `;
 
 export const Link = styled.a`
-  font-size: 2rem;
   text-transform: uppercase;
   ${"" /* padding: 2rem 0; */}
   font-weight: bold;
@@ -81,11 +74,8 @@ export const Link = styled.a`
   text-decoration: none;
   transition: all 0.3s ease;
   z-index: 10;
-
-  @media (max-width: 576px) {
-    font-size: 1.5rem;
-    text-align: center;
-  }
+  font-size: 1rem;
+  text-align: center;
 
   &:hover {
     color: #ef8354;

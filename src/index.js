@@ -1,8 +1,9 @@
 import React from "react";
-import { render } from "react-dom";
+import { render, ReactDOM } from "react-dom";
 import "normalize.css";
 import App from "./App";
 import { GlobalStyles } from "./global-styles";
+import { BrowserRouter } from "react-router-dom";
 
 render(
   <>
@@ -11,3 +12,5 @@ render(
   </>,
   document.getElementById("root")
 );
+
+// ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));

@@ -6,27 +6,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 export default function App() {
   return (
     <Router>
-      <NavbarContainer />
+      {/* <NavbarContainer /> */}
 
       <Switch>
-        <Route path={ROUTES.HOME} exact>
-          <div>Home Page</div>
-        </Route>
-
-        <Route path={ROUTES.ABOUT} exact>
-          <div>About Page</div>
-        </Route>
-
-        <Route path={ROUTES.BUSINESSES} exact>
-          <div>Business Page</div>
-        </Route>
-
-        <Route path={ROUTES.PROMOTE} exact>
-          <div>Promote Page</div>
-        </Route>
-
-        <Route path={ROUTES.CONTACT} exact>
-          <div>Contact Page</div>
+        <Route path={ROUTES.SIGNUP} exact>
+          <div>Signup Page</div>
         </Route>
       </Switch>
     </Router>

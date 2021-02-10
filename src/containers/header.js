@@ -11,6 +11,7 @@ export function HeaderContainer() {
         <Header.Title>SUB</Header.Title>
         <Burger open={open} setOpen={setOpen} />
         <Burger.Menu open={open} setOpen={setOpen}>
+          <Burger.Heading>Hi there!</Burger.Heading>
           <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
             Home
           </Burger.Link>
@@ -32,6 +33,7 @@ export function HeaderContainer() {
           <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
             Sign Up
           </Burger.Link>
+          <Burger.Squiggle />
         </Burger.Menu>
       </Header>
     </>

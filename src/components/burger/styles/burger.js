@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Icon = styled.button`
   position: absolute;
-  top: 31%;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -52,33 +53,47 @@ export const Menu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: white;
-  width: 100%;
+  background: #dcfff5;
+  width: 30%;
   height: 100vh;
-  text-align: center;
+  align-items: center;
   padding: 3.5rem;
   position: absolute;
   top: 0;
   left: 0;
-  transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
+  transform: ${({ open }) => (open ? "translateX(235%)" : "translateX(335%)")};
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
   z-index: 10;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  }
 `;
 
 export const Link = styled.a`
-  text-transform: uppercase;
   ${"" /* padding: 2rem 0; */}
-  font-weight: bold;
-  letter-spacing: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease;
   z-index: 10;
   font-size: 1rem;
-  text-align: center;
 
   &:hover {
     color: #ef8354;
   }
+`;
+
+export const Heading = styled.h2`
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+`;
+
+export const Squiggle = styled.img`
+  width: 22px;
+  height: auto;
 `;

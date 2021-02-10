@@ -7,7 +7,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background: #ffffff;
-  padding: 0 2rem;
   overflow-x: hidden;
   ${"" /* overflow-y: scroll; */}
 `;

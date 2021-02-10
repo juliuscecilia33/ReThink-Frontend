@@ -1,11 +1,13 @@
 import styled from "styled-components/macro";
 
 export const Container = styled.div`
-  width: 503px;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
   background: #ffffff;
+  padding: 0 2rem;
+  overflow-x: hidden;
+  ${"" /* overflow-y: scroll; */}
 `;

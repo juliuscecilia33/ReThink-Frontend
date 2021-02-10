@@ -22,8 +22,6 @@ export const GlobalStyles = createGlobalStyle`
         font-smooth: always;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        display: flex;
-        justify-content: center;
     }
 
     ul {

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Icon = styled.button`
   position: absolute;
-  top: 30%;
-  right: 2rem;
+  top: 31%;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -36,6 +36,7 @@ export const Icon = styled.button`
     }
 
     &:nth-child(2) {
+      margin-left: auto;
       width: 1.5rem;
       opacity: ${({ open }) => (open ? "0" : "1")};
       transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};

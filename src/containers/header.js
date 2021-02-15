@@ -12,27 +12,29 @@ export function HeaderContainer() {
         <Burger open={open} setOpen={setOpen} />
         <Burger.Menu open={open} setOpen={setOpen}>
           <Burger.Heading>Hi there!</Burger.Heading>
-          <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
-            Home
-          </Burger.Link>
-          <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
-            Find Businesses
-          </Burger.Link>
-          <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
-            About Us
-          </Burger.Link>
-          <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
-            Criteria
-          </Burger.Link>
-          <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
-            Meet The Team
-          </Burger.Link>
-          <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
-            Contact Us
-          </Burger.Link>
-          <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
-            Sign Up
-          </Burger.Link>
+          <Burger.Links>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+              Home
+            </Burger.Link>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+              Find Businesses
+            </Burger.Link>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+              About Us
+            </Burger.Link>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+              Criteria
+            </Burger.Link>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+              Meet The Team
+            </Burger.Link>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+              Contact Us
+            </Burger.Link>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+              Sign Up
+            </Burger.Link>
+          </Burger.Links>
           <Burger.Squiggle />
           <Burger.Socials>
             <i class="fab fa-facebook"></i>

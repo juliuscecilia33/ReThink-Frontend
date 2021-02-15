@@ -53,6 +53,7 @@ export const Menu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   background: #dcfff5;
   width: 30%;
   height: 100vh;
@@ -72,6 +73,15 @@ export const Menu = styled.nav`
   }
 `;
 
+export const Links = styled.div`
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+`;
+
 export const Link = styled.a`
   ${"" /* padding: 2rem 0; */}
   font-family: 'Inter', sans-serif;
@@ -81,7 +91,6 @@ export const Link = styled.a`
   transition: all 0.3s ease;
   z-index: 10;
   display: flex;
-  justify-content: center;
   align-items: center;
 
   h2 {
@@ -105,9 +114,16 @@ export const Heading = styled.h2`
   font-size: 25px;
 `;
 
-export const Squiggle = styled.img`
-  width: 22px;
-  height: auto;
+export const Squiggle = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 22px;
+    height: auto;
+  }
 `;
 
 export const Socials = styled.div`

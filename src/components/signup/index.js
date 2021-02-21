@@ -21,7 +21,11 @@ SignUp.Description = function SignUpDescription({ children, ...restProps }) {
 };
 
 SignUp.Input = function SignUpInput({ children, ...restProps }) {
-  return <Input {...restProps}>{children}</Input>;
+  return (
+    <Input {...restProps}>
+      <input placeholder="Name of business"></input>
+    </Input>
+  );
 };
 
 SignUp.LeafDots = function SignUpLeafDots({ children, ...restProps }) {

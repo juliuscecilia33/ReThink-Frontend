@@ -4,10 +4,9 @@ import {
   Container,
   Slogan,
   Inputs,
+  MessageInput,
   Input,
   Label,
-  Plant,
-  Dots,
 } from "./styles/contact";
 
 export default function Contact({ children, ...restProps }) {
@@ -21,9 +20,7 @@ Contact.Slogan = function ContactSlogan({ children, ...restProps }) {
 Contact.Inputs = function ContactInputs({ children, ...restProps }) {
   return (
     <Inputs {...restProps}>
-      <Plant>
-        <img src="/images/TallPlant.png" alt="TallPlant" />
-      </Plant>
+      <img src="/images/TallPlant.png" alt="TallPlant" />
       {children}
     </Inputs>
   );
@@ -34,9 +31,21 @@ Contact.Input = function ContactInput({ placeholder, children, ...restProps }) {
     <Input {...restProps}>
       <Label>{children}</Label>
       <input placeholder={placeholder}></input>
-      <Dots>
-        <img src="/images/CirclePattern.png" alt="Circle Pattern" />
-      </Dots>
+      <img src="/images/CirclePattern.png" alt="Circle Pattern" />
     </Input>
+  );
+};
+
+Contact.MessageInput = function ContactMessageInput({
+  placeholder,
+  children,
+  ...restProps
+}) {
+  return (
+    <MessageInput {...restProps}>
+      <Label>{children}</Label>
+      <input placeholder={placeholder}></input>
+      <img src="/images/CirclePattern.png" alt="Circle Pattern" />
+    </MessageInput>
   );
 };

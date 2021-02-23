@@ -26,10 +26,15 @@ Contact.Inputs = function ContactInputs({ children, ...restProps }) {
   );
 };
 
-Contact.Input = function ContactInput({ placeholder, children, ...restProps }) {
+Contact.Input = function ContactInput({
+  label,
+  placeholder,
+  children,
+  ...restProps
+}) {
   return (
     <Input {...restProps}>
-      <Label>{children}</Label>
+      <Label>{label}</Label>
       <input placeholder={placeholder}></input>
       <img src="/images/CirclePattern.png" alt="Circle Pattern" />
     </Input>
@@ -37,14 +42,15 @@ Contact.Input = function ContactInput({ placeholder, children, ...restProps }) {
 };
 
 Contact.MessageInput = function ContactMessageInput({
+  label,
   placeholder,
   children,
   ...restProps
 }) {
   return (
     <MessageInput {...restProps}>
-      <Label>{children}</Label>
-      <input placeholder={placeholder}></input>
+      <Label>{label}</Label>
+      <textarea placeholder={placeholder}></textarea>
       <img src="/images/CirclePattern.png" alt="Circle Pattern" />
     </MessageInput>
   );

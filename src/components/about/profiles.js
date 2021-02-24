@@ -1,3 +1,5 @@
+// Code written by Kayla Lee
+
 import React, { useEffect } from 'react';
 
 // Takes in a profile and creates a profile card

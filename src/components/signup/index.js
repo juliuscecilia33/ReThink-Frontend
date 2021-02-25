@@ -11,6 +11,8 @@ import {
   HalfInputs,
   HalfInput,
   LeafDots,
+  Select,
+  Button,
 } from "./styles/signup";
 
 export default function SignUp({ children, ...restProps }) {
@@ -82,4 +84,20 @@ SignUp.LeafDots = function SignUpLeafDots({ children, ...restProps }) {
       <img src="/images/LeafandDots.png" alt="LeafAndDots" />
     </LeafDots>
   );
+};
+
+SignUp.Select = function SignUpSelect({ placeholder, children, ...restProps }) {
+  return (
+    <Select {...restProps}>
+      <select>
+        <option value="0">Select:</option>
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+      </select>
+    </Select>
+  );
+};
+
+SignUp.Button = function SignUpButton({ children, ...restProps }) {
+  return <Button {...restProps}>{children}</Button>;
 };

@@ -6,12 +6,7 @@ export const Container = styled.div`
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
-
-  @media (max-width: 500px) {
-    justify-content: center;
-  }
+  padding: 0 3rem;
 `;
 
 export const Title = styled.h3`

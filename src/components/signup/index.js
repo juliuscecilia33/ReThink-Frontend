@@ -4,7 +4,12 @@ import {
   Container,
   Slogan,
   Description,
+  SecondaryDescription,
+  Inputs,
   Input,
+  SecondaryInput,
+  HalfInputs,
+  HalfInput,
   LeafDots,
 } from "./styles/signup";
 
@@ -20,11 +25,54 @@ SignUp.Description = function SignUpDescription({ children, ...restProps }) {
   return <Description {...restProps}>{children}</Description>;
 };
 
-SignUp.Input = function SignUpInput({ children, ...restProps }) {
+SignUp.SecondaryDescription = function SignUpSecondaryDescription({
+  children,
+  ...restProps
+}) {
+  return <SecondaryDescription {...restProps}>{children}</SecondaryDescription>;
+};
+
+SignUp.HalfInputs = function SignUpHalfInputs({
+  placeholder,
+  children,
+  ...restProps
+}) {
+  return <HalfInputs {...restProps}>{children}</HalfInputs>;
+};
+
+SignUp.Inputs = function SignUpInputs({ placeholder, children, ...restProps }) {
+  return <Inputs {...restProps}>{children}</Inputs>;
+};
+
+SignUp.Input = function SignUpInput({ placeholder, children, ...restProps }) {
   return (
     <Input {...restProps}>
-      <input placeholder="Name of business"></input>
+      <input placeholder={placeholder}></input>
     </Input>
+  );
+};
+
+SignUp.SecondaryInput = function SignUpSecondaryInput({
+  placeholder,
+  children,
+  ...restProps
+}) {
+  return (
+    <SecondaryInput {...restProps}>
+      <input placeholder={placeholder}></input>
+    </SecondaryInput>
+  );
+};
+
+SignUp.HalfInput = function SignUpHalfInput({
+  placeholder,
+  children,
+  ...restProps
+}) {
+  return (
+    <HalfInput {...restProps}>
+      <input placeholder={placeholder}></input>
+    </HalfInput>
   );
 };
 

@@ -12,7 +12,19 @@ export function SignUpContainer() {
         <SignUp.Description>
           Start by entering the name of your business
         </SignUp.Description>
-        <SignUp.Input />
+        <SignUp.Inputs>
+          <SignUp.Input placeholder={"Name of business"} />
+          <SignUp.SecondaryInput placeholder={"Address Line 1"} />
+          <SignUp.SecondaryInput placeholder={"Address Line 2"} />
+          <SignUp.HalfInputs>
+            <SignUp.HalfInput placeholder={"City"} />
+            <SignUp.HalfInput placeholder={"State"} />
+            <SignUp.HalfInput placeholder={"Zip Code"} />
+          </SignUp.HalfInputs>
+        </SignUp.Inputs>
+        <SignUp.SecondaryDescription>
+          Can we contact you?
+        </SignUp.SecondaryDescription>
         <SignUp.LeafDots />
       </SignUp>
     </>

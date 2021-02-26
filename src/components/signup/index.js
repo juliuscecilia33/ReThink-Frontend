@@ -8,6 +8,7 @@ import {
   Inputs,
   Input,
   SecondaryInput,
+  SecondaryInputs,
   HalfInputs,
   HalfInput,
   LeafDots,
@@ -20,7 +21,11 @@ export default function SignUp({ children, ...restProps }) {
 }
 
 SignUp.Slogan = function SignUpSlogan({ children, ...restProps }) {
-  return <Slogan {...restProps}>{children}</Slogan>;
+  return (
+    <Slogan {...restProps}>
+      <h2>{children}</h2>
+    </Slogan>
+  );
 };
 
 SignUp.Description = function SignUpDescription({ children, ...restProps }) {
@@ -44,6 +49,14 @@ SignUp.HalfInputs = function SignUpHalfInputs({
 
 SignUp.Inputs = function SignUpInputs({ placeholder, children, ...restProps }) {
   return <Inputs {...restProps}>{children}</Inputs>;
+};
+
+SignUp.SecondaryInputs = function SignUpSecondaryInputs({
+  placeholder,
+  children,
+  ...restProps
+}) {
+  return <SecondaryInputs {...restProps}>{children}</SecondaryInputs>;
 };
 
 SignUp.Input = function SignUpInput({ placeholder, children, ...restProps }) {

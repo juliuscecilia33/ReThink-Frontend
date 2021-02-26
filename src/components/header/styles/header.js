@@ -7,6 +7,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   padding: 0 3rem;
+
+  @media (min-width: 1500px) {
+    width: 80%;
+  }
 `;
 
 export const Title = styled.h3`

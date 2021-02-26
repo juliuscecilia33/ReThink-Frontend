@@ -9,6 +9,7 @@ import {
   Input,
   SecondaryInput,
   SecondaryInputs,
+  InputsAndButton,
   HalfInputs,
   HalfInput,
   LeafDots,
@@ -49,6 +50,14 @@ SignUp.HalfInputs = function SignUpHalfInputs({
 
 SignUp.Inputs = function SignUpInputs({ placeholder, children, ...restProps }) {
   return <Inputs {...restProps}>{children}</Inputs>;
+};
+
+SignUp.InputsAndButton = function SignUpInputsAndButton({
+  placeholder,
+  children,
+  ...restProps
+}) {
+  return <InputsAndButton {...restProps}>{children}</InputsAndButton>;
 };
 
 SignUp.SecondaryInputs = function SignUpSecondaryInputs({

@@ -47,6 +47,10 @@ export const Icon = styled.button`
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
+
+  @media (min-width: 1500px) {
+    display: none;
+  }
 `;
 
 export const Menu = styled.nav`
@@ -70,6 +74,11 @@ export const Menu = styled.nav`
   @media (max-width: 1000px) {
     width: 100%;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  }
+
+  @media (min-width: 1500px) {
+    transform: translateX(525%);
+    width: 20%;
   }
 `;
 

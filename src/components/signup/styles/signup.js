@@ -5,12 +5,17 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #ffffff;
   padding: 0 10%;
   padding-top: 5%;
   ${"" /* overflow-x: hidden; */}
   ${"" /* overflow-y: scroll; */}
   z-index: 1;
+
+  @media (min-width: 1500px) {
+    width: 80%;
+  }
 `;
 
 export const Slogan = styled.div`
@@ -103,11 +108,20 @@ export const Inputs = styled.div`
   }
 `;
 
+export const InputsAndButton = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1300px) {
+    flex-direction: row;
+  }
+`;
+
 export const SecondaryInputs = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   z-index: 1;
   margin-bottom: 5%;
 
@@ -116,6 +130,8 @@ export const SecondaryInputs = styled.div`
   }
 
   @media (min-width: 1300px) {
+    margin-right: auto;
+    margin-left: 12%;
     width: 45%;
   }
 `;
@@ -232,7 +248,7 @@ export const Select = styled.div`
 
   select {
     width: 40%;
-    height: 45px;
+    height: 50px;
     background: #ffffff;
     border: 2px solid #00cc92;
     border-radius: 25px;
@@ -262,8 +278,13 @@ export const Button = styled.button`
   color: #ffffff;
   margin-bottom: 10%;
   transition: 0.5s ease all;
+  margin: 0 auto;
 
   &:hover {
     background: #00cc92;
+  }
+
+  @media (min-width: 1300px) {
+    margin-right: auto;
   }
 `;

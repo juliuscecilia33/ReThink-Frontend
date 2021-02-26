@@ -29,15 +29,17 @@ export function SignUpContainer() {
         <SignUp.SecondaryDescription>
           How should we contact you?
         </SignUp.SecondaryDescription>
-        <SignUp.SecondaryInputs>
-          <SignUp.Input placeholder="Email Address" />
-          <SignUp.HalfInputs>
-            <SignUp.HalfInput placeholder="First Name" />
-            <SignUp.HalfInput placeholder="Last Name" />
-          </SignUp.HalfInputs>
-        </SignUp.SecondaryInputs>
+        <SignUp.InputsAndButton>
+          <SignUp.SecondaryInputs>
+            <SignUp.Input placeholder="Email Address" />
+            <SignUp.HalfInputs>
+              <SignUp.HalfInput placeholder="First Name" />
+              <SignUp.HalfInput placeholder="Last Name" />
+            </SignUp.HalfInputs>
+          </SignUp.SecondaryInputs>
+          <SignUp.Button>Next</SignUp.Button>
+        </SignUp.InputsAndButton>
         <SignUp.LeafDots />
-        <SignUp.Button>Next</SignUp.Button>
       </SignUp>
     </>
   );

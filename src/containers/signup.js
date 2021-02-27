@@ -10,12 +10,14 @@ export function SignUpContainer() {
           <span>with us, you'll like it here</span>
         </SignUp.Slogan>
         <SignUp.Description>
-          Start by entering the name of your business
+          Start by entering details about your business
         </SignUp.Description>
         <SignUp.Inputs>
           <SignUp.Input placeholder="Name of business" />
-          <SignUp.SecondaryInput placeholder="Address Line 1" />
-          <SignUp.SecondaryInput placeholder="Address Line 2" />
+          <SignUp.HalfInputs>
+            <SignUp.HalfInput placeholder="Address Line 1" />
+            <SignUp.HalfInput placeholder="Address Line 2" />
+          </SignUp.HalfInputs>
           <SignUp.HalfInputs>
             <SignUp.HalfInput placeholder="City" />
             <SignUp.HalfInput placeholder="State" />
@@ -40,6 +42,8 @@ export function SignUpContainer() {
           <SignUp.Button>Next</SignUp.Button>
         </SignUp.InputsAndButton>
         <SignUp.LeafDots />
+        <SignUp.TallPlant />
+        <SignUp.WebLady />
       </SignUp>
     </>
   );

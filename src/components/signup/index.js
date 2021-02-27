@@ -15,6 +15,8 @@ import {
   LeafDots,
   Select,
   Button,
+  TallPlant,
+  WebLady,
 } from "./styles/signup";
 
 export default function SignUp({ children, ...restProps }) {
@@ -122,4 +124,20 @@ SignUp.Select = function SignUpSelect({ placeholder, children, ...restProps }) {
 
 SignUp.Button = function SignUpButton({ children, ...restProps }) {
   return <Button {...restProps}>{children}</Button>;
+};
+
+SignUp.TallPlant = function SignUpTallPlant({ children, ...restProps }) {
+  return (
+    <TallPlant {...restProps}>
+      <img src="/images/TallPlant.png" alt="Tall Plant" />
+    </TallPlant>
+  );
+};
+
+SignUp.WebLady = function SignUpWebLady({ children, ...restProps }) {
+  return (
+    <WebLady {...restProps}>
+      <img src="/images/WebLady.png" alt="Web Lady" />
+    </WebLady>
+  );
 };

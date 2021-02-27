@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 export const Container = styled.div`
   position: relative;
   width: 100%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +16,7 @@ export const Container = styled.div`
 
   @media (min-width: 1500px) {
     width: 80%;
+    padding-top: 1%;
   }
 `;
 
@@ -48,6 +50,10 @@ export const Slogan = styled.div`
       line-height: 50px;
       text-align: left;
     }
+  }
+
+  @media (min-width: 1500px) {
+    margin-bottom: 1rem;
   }
 `;
 
@@ -106,6 +112,10 @@ export const Inputs = styled.div`
   @media (min-width: 1300px) {
     width: 75%;
   }
+
+  @media (min-width: 1500px) {
+    margin-bottom: 1.5%;
+  }
 `;
 
 export const InputsAndButton = styled.div`
@@ -134,6 +144,10 @@ export const SecondaryInputs = styled.div`
     margin-left: 12%;
     width: 45%;
   }
+
+  @media (min-width: 1500px) {
+    margin-bottom: 1.5%;
+  }
 `;
 
 export const HalfInputs = styled.div`
@@ -146,7 +160,7 @@ export const HalfInputs = styled.div`
   margin-bottom: 5%;
 
   @media (min-width: 675px) {
-    margin-bottom: 2%;
+    margin-bottom: 0%;
   }
 `;
 
@@ -169,10 +183,18 @@ export const Input = styled.div`
     &::placeholder {
       color: #00cc92;
     }
+
+    @media (min-width: 1500px) {
+      height: 43px;
+    }
   }
 
-  @media (min-width: 850px) {
+  @media (min-width: 550px) {
     margin-bottom: 4%;
+  }
+
+  @media (min-width: 1500px) {
+    margin-bottom: 2.5%;
   }
 `;
 
@@ -195,10 +217,18 @@ export const SecondaryInput = styled.div`
     &::placeholder {
       color: #00cc92;
     }
+
+    @media (min-width: 1500px) {
+      height: 43px;
+    }
   }
 
-  @media (min-width: 850px) {
+  @media (min-width: 550px) {
     margin-bottom: 4%;
+  }
+
+  @media (min-width: 1500px) {
+    margin-bottom: 2.5%;
   }
 `;
 
@@ -221,10 +251,18 @@ export const HalfInput = styled.div`
     &::placeholder {
       color: #00cc92;
     }
+
+    @media (min-width: 1500px) {
+      height: 43px;
+    }
   }
 
-  @media (min-width: 850px) {
+  @media (min-width: 550px) {
     margin-bottom: 4%;
+  }
+
+  @media (min-width: 1500px) {
+    margin-bottom: 2.5%;
   }
 `;
 
@@ -257,12 +295,20 @@ export const Select = styled.div`
     color: #00cc92;
     filter: drop-shadow(4px 7px 9px rgba(0, 0, 0, 0.25));
     padding: 0 15px;
+
+    @media (min-width: 1500px) {
+      height: 43px;
+    }
   }
 
   @media (min-width: 1300px) {
     justify-content: start;
     width: 75%;
     margin-bottom: 5%;
+  }
+
+  @media (min-width: 1500px) {
+    margin-bottom: 2%;
   }
 `;
 
@@ -286,5 +332,49 @@ export const Button = styled.button`
 
   @media (min-width: 1300px) {
     margin-right: auto;
+  }
+`;
+
+export const TallPlant = styled.div`
+  position: absolute;
+  display: none;
+
+  img {
+    width: auto;
+    height: 473px;
+  }
+
+  @media (min-width: 1300px) {
+    display: flex;
+    bottom: 0;
+    left: 0;
+  }
+
+  @media (min-width: 1500px) {
+    bottom: 0;
+    left: 0;
+    display: flex;
+  }
+`;
+
+export const WebLady = styled.div`
+  position: absolute;
+  display: none;
+
+  img {
+    height: 560px;
+    width: auto;
+  }
+
+  @media (min-width: 1500px) {
+    bottom: 0;
+    right: -19%;
+    display: flex;
+  }
+
+  @media (min-width: 1300px) {
+    bottom: 0;
+    right: -15%;
+    display: flex;
   }
 `;

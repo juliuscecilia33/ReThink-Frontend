@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as ReactRouterLink } from "react-router-dom";
 
 import {
   Container,
@@ -16,15 +15,13 @@ import {
   LeafDots,
   Select,
   Button,
-  TallPlant,
-  WebLady,
-} from "./styles/signup";
+} from "./styles/signup2";
 
-export default function SignUp({ children, ...restProps }) {
+export default function SignUp2({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
 
-SignUp.Slogan = function SignUpSlogan({ children, ...restProps }) {
+SignUp2.Slogan = function SignUp2Slogan({ children, ...restProps }) {
   return (
     <Slogan {...restProps}>
       <h2>{children}</h2>
@@ -32,18 +29,18 @@ SignUp.Slogan = function SignUpSlogan({ children, ...restProps }) {
   );
 };
 
-SignUp.Description = function SignUpDescription({ children, ...restProps }) {
+SignUp2.Description = function SignUp2Description({ children, ...restProps }) {
   return <Description {...restProps}>{children}</Description>;
 };
 
-SignUp.SecondaryDescription = function SignUpSecondaryDescription({
+SignUp2.SecondaryDescription = function SignUp2SecondaryDescription({
   children,
   ...restProps
 }) {
   return <SecondaryDescription {...restProps}>{children}</SecondaryDescription>;
 };
 
-SignUp.HalfInputs = function SignUpHalfInputs({
+SignUp2.HalfInputs = function SignUp2HalfInputs({
   placeholder,
   children,
   ...restProps
@@ -51,11 +48,15 @@ SignUp.HalfInputs = function SignUpHalfInputs({
   return <HalfInputs {...restProps}>{children}</HalfInputs>;
 };
 
-SignUp.Inputs = function SignUpInputs({ placeholder, children, ...restProps }) {
+SignUp2.Inputs = function SignUp2Inputs({
+  placeholder,
+  children,
+  ...restProps
+}) {
   return <Inputs {...restProps}>{children}</Inputs>;
 };
 
-SignUp.InputsAndButton = function SignUpInputsAndButton({
+SignUp2.InputsAndButton = function SignUp2InputsAndButton({
   placeholder,
   children,
   ...restProps
@@ -63,7 +64,7 @@ SignUp.InputsAndButton = function SignUpInputsAndButton({
   return <InputsAndButton {...restProps}>{children}</InputsAndButton>;
 };
 
-SignUp.SecondaryInputs = function SignUpSecondaryInputs({
+SignUp2.SecondaryInputs = function SignUp2SecondaryInputs({
   placeholder,
   children,
   ...restProps
@@ -71,7 +72,7 @@ SignUp.SecondaryInputs = function SignUpSecondaryInputs({
   return <SecondaryInputs {...restProps}>{children}</SecondaryInputs>;
 };
 
-SignUp.Input = function SignUpInput({ placeholder, children, ...restProps }) {
+SignUp2.Input = function SignUp2Input({ placeholder, children, ...restProps }) {
   return (
     <Input {...restProps}>
       <input placeholder={placeholder}></input>
@@ -79,7 +80,7 @@ SignUp.Input = function SignUpInput({ placeholder, children, ...restProps }) {
   );
 };
 
-SignUp.SecondaryInput = function SignUpSecondaryInput({
+SignUp2.SecondaryInput = function SignUp2SecondaryInput({
   placeholder,
   children,
   ...restProps
@@ -91,7 +92,7 @@ SignUp.SecondaryInput = function SignUpSecondaryInput({
   );
 };
 
-SignUp.HalfInput = function SignUpHalfInput({
+SignUp2.HalfInput = function SignUp2HalfInput({
   placeholder,
   children,
   ...restProps
@@ -103,7 +104,7 @@ SignUp.HalfInput = function SignUpHalfInput({
   );
 };
 
-SignUp.LeafDots = function SignUpLeafDots({ children, ...restProps }) {
+SignUp2.LeafDots = function SignUp2LeafDots({ children, ...restProps }) {
   return (
     <LeafDots {...restProps}>
       <img src="/images/LeafandDots.png" alt="LeafAndDots" />
@@ -111,7 +112,11 @@ SignUp.LeafDots = function SignUpLeafDots({ children, ...restProps }) {
   );
 };
 
-SignUp.Select = function SignUpSelect({ placeholder, children, ...restProps }) {
+SignUp2.Select = function SignUp2Select({
+  placeholder,
+  children,
+  ...restProps
+}) {
   return (
     <Select {...restProps}>
       <select>
@@ -123,26 +128,6 @@ SignUp.Select = function SignUpSelect({ placeholder, children, ...restProps }) {
   );
 };
 
-SignUp.Button = function SignUpButton({ to, children, ...restProps }) {
-  return (
-    <ReactRouterLink to={to}>
-      <Button {...restProps}>{children}</Button>;
-    </ReactRouterLink>
-  );
-};
-
-SignUp.TallPlant = function SignUpTallPlant({ children, ...restProps }) {
-  return (
-    <TallPlant {...restProps}>
-      <img src="/images/TallPlant.png" alt="Tall Plant" />
-    </TallPlant>
-  );
-};
-
-SignUp.WebLady = function SignUpWebLady({ children, ...restProps }) {
-  return (
-    <WebLady {...restProps}>
-      <img src="/images/WebLady.png" alt="Web Lady" />
-    </WebLady>
-  );
+SignUp2.Button = function SignUp2Button({ children, ...restProps }) {
+  return <Button {...restProps}>{children}</Button>;
 };

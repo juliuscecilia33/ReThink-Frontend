@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SignUp } from "../components";
+import * as ROUTES from "../constants/routes";
 
 export function SignUpContainer() {
   return (
@@ -39,7 +40,7 @@ export function SignUpContainer() {
               <SignUp.HalfInput placeholder="Last Name" />
             </SignUp.HalfInputs>
           </SignUp.SecondaryInputs>
-          <SignUp.Button>Next</SignUp.Button>
+          <SignUp.Button to={ROUTES.SIGNUP2}>Next</SignUp.Button>
         </SignUp.InputsAndButton>
         <SignUp.LeafDots />
         <SignUp.TallPlant />

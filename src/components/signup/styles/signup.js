@@ -157,7 +157,6 @@ export const HalfInputs = styled.div`
   align-items: center;
   flex-wrap: wrap;
   z-index: 1;
-  margin-bottom: 5%;
 
   @media (min-width: 675px) {
     margin-bottom: 0%;

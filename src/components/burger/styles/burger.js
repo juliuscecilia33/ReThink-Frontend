@@ -83,12 +83,15 @@ export const Menu = styled.nav`
 `;
 
 export const Links = styled.div`
-  width: 100%;
   height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
+
+  @media (min-width: 1500px) {
+    height: 50%;
+  }
 `;
 
 export const Link = styled.a`
@@ -110,6 +113,11 @@ export const Link = styled.a`
     width: 30px;
     height: auto;
     margin-right: 1rem;
+
+    @media (min-width: 1500px) {
+      width: 28px;
+      height: auto;
+    }
   }
 
   &:hover {

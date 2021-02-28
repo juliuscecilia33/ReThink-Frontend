@@ -236,3 +236,26 @@ export const Button = styled.div`
     justify-content: flex-end;
   }
 `;
+
+export const TallPlant = styled.div`
+  position: absolute;
+  top: -12%;
+  right: -7%;
+
+  img {
+    width: auto;
+    height: auto;
+    ${"" /* transform: rotate(-123.84deg); */}
+  }
+`;
+
+export const WebLady = styled.div`
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+
+  img {
+    height: 432px;
+    width: auto;
+  }
+`;

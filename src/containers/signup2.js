@@ -23,6 +23,8 @@ export function SignUp2Container() {
         </SignUp2.Description>
         <SignUp2.Input />
         <SignUp2.Button to={ROUTES.SIGNUP}>Next</SignUp2.Button>
+        <SignUp2.TallPlant />
+        <SignUp2.WebLady />
       </SignUp2>
     </>
   );

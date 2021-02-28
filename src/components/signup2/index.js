@@ -5,17 +5,14 @@ import {
   Container,
   Slogan,
   Description,
-  SecondaryDescription,
   Inputs,
   Input,
-  SecondaryInput,
   SecondaryInputs,
   InputsAndButton,
-  HalfInputs,
-  HalfInput,
-  LeafDots,
   Select,
   Button,
+  TallPlant,
+  WebLady,
 } from "./styles/signup2";
 
 export default function SignUp2({ children, ...restProps }) {
@@ -89,5 +86,21 @@ SignUp2.Button = function SignUp2Button({ to, children, ...restProps }) {
         <button>{children}</button>;
       </ReactRouterLink>
     </Button>
+  );
+};
+
+SignUp2.TallPlant = function SignUp2TallPlant({ children, ...restProps }) {
+  return (
+    <TallPlant {...restProps}>
+      <img src="/images/RotatedTallPlant.png" alt="Tall Plant" />
+    </TallPlant>
+  );
+};
+
+SignUp2.WebLady = function SignUp2WebLady({ children, ...restProps }) {
+  return (
+    <WebLady {...restProps}>
+      <img src="/images/WebLady2.png" alt="Web Lady" />
+    </WebLady>
   );
 };

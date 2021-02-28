@@ -28,7 +28,7 @@ export function HeaderContainer() {
             <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
               Meet The Team
             </Burger.Link>
-            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>
+            <Burger.Link open={open} setOpen={setOpen} to={ROUTES.CONTACT}>
               Contact Us
             </Burger.Link>
             <Burger.Link open={open} setOpen={setOpen} to={ROUTES.SIGNUP}>

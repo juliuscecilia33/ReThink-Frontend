@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ReactRouterLink } from "react-router-dom";
 
 import {
   Container,
@@ -33,21 +34,6 @@ SignUp2.Description = function SignUp2Description({ children, ...restProps }) {
   return <Description {...restProps}>{children}</Description>;
 };
 
-SignUp2.SecondaryDescription = function SignUp2SecondaryDescription({
-  children,
-  ...restProps
-}) {
-  return <SecondaryDescription {...restProps}>{children}</SecondaryDescription>;
-};
-
-SignUp2.HalfInputs = function SignUp2HalfInputs({
-  placeholder,
-  children,
-  ...restProps
-}) {
-  return <HalfInputs {...restProps}>{children}</HalfInputs>;
-};
-
 SignUp2.Inputs = function SignUp2Inputs({
   placeholder,
   children,
@@ -75,40 +61,8 @@ SignUp2.SecondaryInputs = function SignUp2SecondaryInputs({
 SignUp2.Input = function SignUp2Input({ placeholder, children, ...restProps }) {
   return (
     <Input {...restProps}>
-      <input placeholder={placeholder}></input>
+      <textarea placeholder={placeholder}></textarea>
     </Input>
-  );
-};
-
-SignUp2.SecondaryInput = function SignUp2SecondaryInput({
-  placeholder,
-  children,
-  ...restProps
-}) {
-  return (
-    <SecondaryInput {...restProps}>
-      <input placeholder={placeholder}></input>
-    </SecondaryInput>
-  );
-};
-
-SignUp2.HalfInput = function SignUp2HalfInput({
-  placeholder,
-  children,
-  ...restProps
-}) {
-  return (
-    <HalfInput {...restProps}>
-      <input placeholder={placeholder}></input>
-    </HalfInput>
-  );
-};
-
-SignUp2.LeafDots = function SignUp2LeafDots({ children, ...restProps }) {
-  return (
-    <LeafDots {...restProps}>
-      <img src="/images/LeafandDots.png" alt="LeafAndDots" />
-    </LeafDots>
   );
 };
 
@@ -128,6 +82,12 @@ SignUp2.Select = function SignUp2Select({
   );
 };
 
-SignUp2.Button = function SignUp2Button({ children, ...restProps }) {
-  return <Button {...restProps}>{children}</Button>;
+SignUp2.Button = function SignUp2Button({ to, children, ...restProps }) {
+  return (
+    <Button {...restProps}>
+      <ReactRouterLink to={to}>
+        <button>{children}</button>;
+      </ReactRouterLink>
+    </Button>
+  );
 };

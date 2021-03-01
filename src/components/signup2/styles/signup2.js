@@ -246,6 +246,35 @@ export const TallPlant = styled.div`
     width: auto;
     height: auto;
     ${"" /* transform: rotate(-123.84deg); */}
+
+    @media (max-width: 1499px) {
+      height: 250px;
+      width: auto;
+    }
+
+    @media (max-width: 1200px) {
+      height: 225px;
+      width: auto;
+    }
+
+    @media (max-width: 500px) {
+      height: 150px;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    top: -20%;
+    right: -17%;
+  }
+
+  @media (max-width: 500px) {
+    top: -15%;
+    right: -20%;
+  }
+
+  @media (max-width: 500px) {
+    display: none;
   }
 `;
 
@@ -257,5 +286,27 @@ export const WebLady = styled.div`
   img {
     height: 432px;
     width: auto;
+
+    @media (max-width: 1499px) {
+      height: 350px;
+      width: auto;
+    }
+
+    @media (max-width: 1200px) {
+      height: 300px;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    left: -5%;
+  }
+
+  @media (max-width: 750px) {
+    left: -8%;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
   }
 `;

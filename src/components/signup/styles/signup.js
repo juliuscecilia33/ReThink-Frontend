@@ -14,9 +14,12 @@ export const Container = styled.div`
   ${"" /* overflow-y: scroll; */}
   z-index: 1;
 
+  @media (min-width: 1300px) {
+    padding-top: 1%;
+  }
+
   @media (min-width: 1500px) {
     width: 80%;
-    padding-top: 1%;
   }
 `;
 
@@ -52,7 +55,7 @@ export const Slogan = styled.div`
     }
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1300px) {
     margin-bottom: 1rem;
   }
 `;
@@ -113,7 +116,7 @@ export const Inputs = styled.div`
     width: 75%;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1300px) {
     margin-bottom: 1.5%;
   }
 `;
@@ -125,6 +128,10 @@ export const InputsAndButton = styled.div`
 
   @media (min-width: 1300px) {
     flex-direction: row;
+  }
+
+  @media (max-width: 1299px) {
+    align-items: center;
   }
 `;
 
@@ -145,7 +152,7 @@ export const SecondaryInputs = styled.div`
     width: 45%;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1300px) {
     margin-bottom: 1.5%;
   }
 `;
@@ -169,7 +176,7 @@ export const Input = styled.div`
 
   input {
     width: 100%;
-    height: 50px;
+    height: 43px;
     background: #ffffff;
     border: 2px solid #00cc92;
     border-radius: 25px;
@@ -192,7 +199,7 @@ export const Input = styled.div`
     margin-bottom: 4%;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1300px) {
     margin-bottom: 2.5%;
   }
 `;
@@ -203,7 +210,7 @@ export const SecondaryInput = styled.div`
 
   input {
     width: 100%;
-    height: 50px;
+    height: 43px;
     background: #ffffff;
     border: 2px solid #00cc92;
     border-radius: 25px;
@@ -226,7 +233,7 @@ export const SecondaryInput = styled.div`
     margin-bottom: 4%;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1300px) {
     margin-bottom: 2.5%;
   }
 `;
@@ -237,7 +244,7 @@ export const HalfInput = styled.div`
 
   input {
     width: 100%;
-    height: 50px;
+    height: 43px;
     background: #ffffff;
     border: 2px solid #00cc92;
     border-radius: 25px;
@@ -260,7 +267,7 @@ export const HalfInput = styled.div`
     margin-bottom: 4%;
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1300px) {
     margin-bottom: 2.5%;
   }
 `;
@@ -285,7 +292,7 @@ export const Select = styled.div`
 
   select {
     width: 40%;
-    height: 50px;
+    height: 43px;
     background: #ffffff;
     border: 2px solid #00cc92;
     border-radius: 25px;
@@ -303,12 +310,12 @@ export const Select = styled.div`
   @media (min-width: 1300px) {
     justify-content: start;
     width: 75%;
-    margin-bottom: 5%;
-  }
-
-  @media (min-width: 1500px) {
     margin-bottom: 2%;
   }
+
+  ${"" /* @media (min-width: 1500px) {
+    margin-bottom: 2%;
+  } */}
 `;
 
 export const Button = styled.button`

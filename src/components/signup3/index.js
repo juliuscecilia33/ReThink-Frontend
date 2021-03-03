@@ -7,8 +7,10 @@ import {
   Description,
   Label,
   Button,
+  DarkTallPlant,
   TallPlant,
   Rectangle,
+  InfoSec,
   InfoTitle,
   InfoDescr,
   InfoSecDescr,
@@ -26,12 +28,16 @@ SignUp3.Slogan = function SignUp3Slogan({ children, ...restProps }) {
   );
 };
 
+SignUp3.Label = function SignUp3Label({ children, ...restProps }) {
+  return <Label {...restProps}>{children}</Label>;
+};
+
 SignUp3.Description = function SignUp3Description({ children, ...restProps }) {
   return <Description {...restProps}>{children}</Description>;
 };
 
-SignUp3.Label = function SignUp3Label({ children, ...restProps }) {
-  return <Label {...restProps}>{children}</Label>;
+SignUp3.InfoSec = function SignUp3InfoSec({ children, ...restProps }) {
+  return <InfoSec {...restProps}>{children}</InfoSec>;
 };
 
 SignUp3.InfoTitle = function SignUp3InfoTitle({ children, ...restProps }) {
@@ -63,10 +69,21 @@ SignUp3.Button = function SignUp3Button({ to, children, ...restProps }) {
   );
 };
 
-SignUp3.TallPlant = function SignUp3TallPlant({ children, ...restProps }) {
+SignUp3.DarkTallPlant = function SignUp3DarkTallPlant({
+  children,
+  ...restProps
+}) {
+  return (
+    <DarkTallPlant {...restProps}>
+      <img src="/images/DarkTallPlant.png" alt="Dark Tall Plant" />
+    </DarkTallPlant>
+  );
+};
+
+SignUp3.TallPlant = function SignUp3DarkTallPlant({ children, ...restProps }) {
   return (
     <TallPlant {...restProps}>
-      <img src="/images/RotatedTallPlant.png" alt="Tall Plant" />
+      <img src="/images/TallPlant.png" alt="Tall Plant" />
     </TallPlant>
   );
 };

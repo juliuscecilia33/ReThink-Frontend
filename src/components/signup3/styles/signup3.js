@@ -57,56 +57,50 @@ export const Slogan = styled.div`
   }
 `;
 
-export const Description = styled.p`
-  width: 80%;
-  font-weight: 400;
-  font-size: 18px;
-  color: #3e3b3b;
-  margin-bottom: 8%;
-  line-height: 28px;
-  text-align: center;
-
-  @media (min-width: 500px) {
-    margin-bottom: 1.5%;
-  }
-
-  @media (min-width: 1300px) {
-    width: 75%;
-    text-align: left;
-    font-size: 20px;
-  }
-`;
-
 export const Label = styled.h3`
-  width: 80%;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 30px;
   color: #00cc92;
-  margin-bottom: 8%;
+  margin-bottom: 1%;
   line-height: 28px;
   text-align: center;
+`;
 
-  @media (min-width: 500px) {
-    margin-bottom: 1.5%;
-  }
+export const Description = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  color: #3e3b3b;
+  margin-bottom: 2.5%;
+  line-height: 28px;
+  text-align: center;
+`;
+
+export const InfoSec = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
 `;
 
 export const InfoTitle = styled.h3`
   font-weight: 600;
   font-size: 25px;
   color: #3f3d56;
+  margin-bottom: 2%;
 `;
 
 export const InfoDescr = styled.h3`
   font-weight: 500;
   font-size: 20px;
   color: #3f3d56;
+  margin-bottom: 2%;
 `;
 
 export const InfoSecDescr = styled.h3`
   font-weight: 500;
   font-size: 20px;
   color: #00cc92;
+  margin-bottom: 2%;
 `;
 
 export const Button = styled.div`
@@ -145,46 +139,31 @@ export const Rectangle = styled.div`
   background: rgba(220, 255, 245, 0.7);
   border-radius: 15px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2.5rem;
 `;
 
-export const TallPlant = styled.div`
+export const DarkTallPlant = styled.div`
   position: absolute;
-  top: -12%;
-  right: -7%;
+  bottom: 0;
+  right: -17%;
 
   img {
     width: auto;
     height: auto;
     ${"" /* transform: rotate(-123.84deg); */}
-
-    @media (max-width: 1499px) {
-      height: 250px;
-      width: auto;
-    }
-
-    @media (max-width: 1200px) {
-      height: 225px;
-      width: auto;
-    }
-
-    @media (max-width: 500px) {
-      height: 150px;
-      width: auto;
-    }
   }
+`;
 
-  @media (max-width: 1200px) {
-    top: -20%;
-    right: -17%;
-  }
+export const TallPlant = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
-  @media (max-width: 500px) {
-    top: -15%;
-    right: -20%;
-  }
-
-  @media (max-width: 500px) {
-    display: none;
+  img {
+    width: auto;
+    height: auto;
+    ${"" /* transform: rotate(-123.84deg); */}
   }
 `;

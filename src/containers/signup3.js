@@ -26,7 +26,7 @@ export function SignUp3Container() {
           <SignUp3.InfoDescr>Michael Hulme</SignUp3.InfoDescr>
           <SignUp3.InfoSecDescr>michaelhulme@gmail.com</SignUp3.InfoSecDescr>
         </SignUp3.Rectangle>
-        <SignUp3.Button>Submit</SignUp3.Button>
+        <SignUp3.Button to={ROUTES.SIGNUP}>Submit</SignUp3.Button>
         <SignUp3.DarkTallPlant />
         <SignUp3.TallPlant />
       </SignUp3>

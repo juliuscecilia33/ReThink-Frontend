@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   background: #ffffff;
   padding: 0 10%;
-  padding-top: 5%;
+  padding-top: 1%;
   ${"" /* overflow-x: hidden; */}
   ${"" /* overflow-y: scroll; */}
   z-index: 1;
@@ -22,10 +22,9 @@ export const Container = styled.div`
 
 export const Slogan = styled.div`
   width: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
 
   h2 {
     width: 80%;
@@ -55,6 +54,10 @@ export const Slogan = styled.div`
   @media (min-width: 1500px) {
     margin-bottom: 1rem;
   }
+
+  @media (max-width: 750px) {
+    margin-bottom: 10%;
+  }
 `;
 
 export const Label = styled.h3`
@@ -64,6 +67,7 @@ export const Label = styled.h3`
   margin-bottom: 1%;
   line-height: 28px;
   text-align: center;
+  z-index: 2;
 `;
 
 export const Description = styled.p`
@@ -73,6 +77,7 @@ export const Description = styled.p`
   margin-bottom: 2.5%;
   line-height: 28px;
   text-align: center;
+  z-index: 2;
 `;
 
 export const InfoSec = styled.div`
@@ -80,13 +85,25 @@ export const InfoSec = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 4%;
+
+  @media (max-width: 450px) {
+    margin-bottom: 6%;
+  }
 `;
 
 export const InfoTitle = styled.h3`
-  font-weight: 600;
+  font-weight: 700;
   font-size: 25px;
   color: #3f3d56;
   margin-bottom: 2%;
+
+  @media (max-width: 750px) {
+    font-size: 23px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 `;
 
 export const InfoDescr = styled.h3`
@@ -94,6 +111,14 @@ export const InfoDescr = styled.h3`
   font-size: 20px;
   color: #3f3d56;
   margin-bottom: 2%;
+
+  @media (max-width: 750px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
 `;
 
 export const InfoSecDescr = styled.h3`
@@ -101,12 +126,22 @@ export const InfoSecDescr = styled.h3`
   font-size: 20px;
   color: #00cc92;
   margin-bottom: 2%;
+
+  @media (max-width: 750px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 15px;
+  }
 `;
 
 export const Button = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 4%;
+  z-index: 2;
 
   button {
     width: 128px;
@@ -128,13 +163,13 @@ export const Button = styled.div`
   }
 
   @media (min-width: 1300px) {
-    width: 75%;
+    width: 55%;
     justify-content: flex-end;
   }
 `;
 
 export const Rectangle = styled.div`
-  width: 626px;
+  width: 656px;
   height: 303px;
   background: rgba(220, 255, 245, 0.7);
   border-radius: 15px;
@@ -142,6 +177,33 @@ export const Rectangle = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0 2.5rem;
+  z-index: 2;
+
+  @media (max-width: 900px) {
+    width: 600px;
+    height: 275px;
+  }
+
+  @media (max-width: 700px) {
+    width: 500px;
+    height: 255px;
+  }
+
+  @media (max-width: 550px) {
+    width: 440px;
+    height: 255px;
+  }
+
+  @media (max-width: 500px) {
+    width: 390px;
+    height: 245px;
+  }
+
+  @media (max-width: 450px) {
+    width: 350px;
+    height: 235px;
+    padding: 0 1.2rem;
+  }
 `;
 
 export const DarkTallPlant = styled.div`
@@ -153,17 +215,55 @@ export const DarkTallPlant = styled.div`
     width: auto;
     height: auto;
     ${"" /* transform: rotate(-123.84deg); */}
+
+    @media (max-width: 1400px) {
+      height: 450px;
+      width: auto;
+    }
+
+    @media (max-width: 1000px) {
+      height: 350px;
+      width: auto;
+    }
+
+    @media (max-width: 750px) {
+      height: 250px;
+      width: auto;
+    }
   }
 `;
 
 export const TallPlant = styled.div`
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
 
   img {
     width: auto;
     height: auto;
-    ${"" /* transform: rotate(-123.84deg); */}
+    transform: matrix(0.51, -0.86, -0.86, -0.51, 0, 0);
+
+    @media (max-width: 1400px) {
+      height: 500px;
+      width: auto;
+    }
+
+    @media (max-width: 1000px) {
+      height: 400px;
+      width: auto;
+    }
+
+    @media (max-width: 750px) {
+      height: 300px;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    top: 10%;
+  }
+
+  @media (max-width: 550px) {
+    display: none;
   }
 `;
